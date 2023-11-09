@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    color: #050505;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: #E8E8E8;
+    transition: all .4s;
+    overflow-x: hidden;
+}
+
+body img{
+    -webkit-user-drag: none;
+}
+
+h1,h2,h3,a{font-family: 'Lato', sans-serif; font-weight: 700;}
+
+h1{font-size: 2.2em;}
+
+h1, h2{
+    color: #f04050;
+}
+
+
+h2{font-size: 2em;}
+
+h3{
+    color: #2f7ca0;
+    font-size: 1.5em;
+}
+
+p{text-align: justify; font-family: 'Roboto', sans-serif;}
+
+a{
+    cursor: pointer;
+}
+
+/*  HEADER - CABEÇALHO  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #020A53;
+    width: 100%;
+    position: relative;
+}
+
+
+.logo{
+    display: grid;
+    place-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+header > nav, .menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    color: #FFFFFF;
+    font-size: 1.3em;
+    transition: .5s ease;
+}
+
+
+
+
+/*  MENU_MOBILE     */
+
+/* Menu mobile */
+
+.mobile_btn{
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #e5e5e5;
+    margin: 6px 0;
+    transition: .4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+  
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+}
+
+/* FOTO PRINCIPAL E FUNDO */
+
+#ftprincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+#fundofotoprincipal{
+    background-color: #000080;
+    width: 100%;
+    height: 50px;
+    
+    
+}
+
+
+
+
+/* CONTEUDO DA PÁGINA - ESTILIZAÇÕES PADRÕES DE ALGUNS CONTEÚDOS    */
+
+main{
+    margin: 4em;
+    width: 90%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5em;
+}
+
+section{
+    width: 100%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+/*CARDS - CONTEÚDOS DA PAGINA SEPARADAMENTE */
+
+#card_saphireduc{
+    width: 95%;
+    background: #F5F5F5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+#educacao{
+    
+    background-color: #020A53;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    
+    
+}
+
+#card-educacao{
+    width: 95%;
+    
+    background: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+
+#main-educacao{
+   
+   width: 50%;
+   margin: 50px;
+   
+  
+   
+   
+   
+}
+
+#video-educacao{
+    
+    margin-top: 30px;
+    margin-right: 10px;
+    
+  
+}
+
+
+
+
+
+
+
+.card{
+    background: #F5F5F5;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.text{
+    text-align: justify;
+}
+.text p{
+    margin-bottom: 14px;
+}
+
+.card > a, .card > button{
+    background-color: #026096;
+    width: 40%;
+    border-radius: 30px;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    color: #E8E8E8;
+    transition: .5s ease-out;
+}
+
+.card > a:hover, .card > button:hover{
+    background-color: #023696;
+}
+
+
+
+.float{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.float h1{
+    margin-bottom: 1.4em;
+}
+.float img{
+    width: 20%;
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+}
+
+.float .text{
+    width: 60%;
+}
+
+
+.parallax {
+    width: 100vw;
+    background-image: url(../img/parallax.jpg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parallax div {
+    padding: 12px;
+    
+    background-color: #e8e8e827;
+    backdrop-filter: blur(6px); 
+  }
+  
+  .parallax h2 {
+    color: #1f090a;
+  }
+  
+  .parallax h2::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    backdrop-filter: blur(2px);
+    z-index: -1;
+  }
+  
+
+.partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+    opacity: 0;
+    transition: opacity .9s;
+}
+.partner.visible{
+    opacity: 1;
+}
+
+.partner:last-child{
+    flex-direction: row-reverse;
+}
+
+.partner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 45%;
+}
+
+
+.partner a img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/parallax.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #E8E8E8;
+    padding: 2em;  
+
+    width: 60%;
+    min-height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    transform: scale(.7);
+    animation: blowUp .4s ease forwards;
+}
+
+@keyframes blowUp {
+    0% {
+        transform: scale(.7s);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-container > a{
+    padding: 12px;
+    background-color: #026096;
+    border-radius: 30px;
+    color: #E8E8E8;
+    transition: .9s;
+}
+
+.modal-container > a:hover{
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5)
+}
+
+.modal-container span{
+    text-align: left;
+}
+
+.close{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 2em;
+    color: #050505;
+    cursor: pointer;
+}
+
+/*  FOOTER - RODAPÉ   */
+footer{
+    width: 100%;
+    background-color: #020A53;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 3em;
+}
+
+footer p, footer strong{
+    color: #E8E8E8;
+    text-align: center;
+}
+
+
+#redes_socias{
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#img_logos{
+    width: 87;
+    height: 61;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    h1{font-size: 1.8em;}
+    h2{font-size: 1.5em;}
+    h3{font-size: 1.2em;}
+
+    .logo{
+        width: 50%;
+    }
+
+    .mobile_btn{
+        display: block;
+        cursor: pointer;
+    }
+
+    header > nav{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+    }
+    .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #F5F5F5;
+        width: 90%;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    }
+  
+    .menu.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .menu li{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    .menu li a{
+        color: #050505;
+        padding: 5px 0;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1.2em;
+        border-radius: 2px;
+    }
+
+    .menu li a:hover{
+        background-color: rgba(14, 14, 14, 0.15);
+    }
+
+    .card{
+        align-items: center;
+        width: 85%;
+    }
+
+
+    .card > a{
+        width: 95%;
+    }
+
+
+
+    .float img{
+        display: none;
+    }
+
+    .partner{
+        flex-direction: column;
+        gap: 2.5em;
+    }
+    .partner:last-child{
+        flex-direction: column;
+    }
+
+    .partner-content{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .logo{
+        width: 30%;
+    }
+
+    .menu{
+        gap: 2em;
+    }
+
+    
+    .menu li a:hover{
+        color: #FF3244;
+    }   
+
+    .partner a{
+        width: 40%;
+    }
+
+    
+}
